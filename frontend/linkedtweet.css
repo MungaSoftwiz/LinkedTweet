@@ -1,0 +1,93 @@
+body {
+    background-color: hsla(213, 43%, 96%, 1);
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: hsl(213, 43%, 94%);
+}
+
+.left-navbar a,
+.right-navbar a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: hsl(200, 70%, 45%);
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.hero h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+    padding: 30px 10px;
+    color: hsl(200, 15%, 54%);
+}
+
+.prompt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prompt textarea:focus {
+    border: 2px solid hsl(200, 70%, 45%);
+}
+
+.submit-prompt {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    float: left;
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: hsl(200, 70%, 45%);
+    border: none;
+    border-radius: 10px;
+}
+
+.prompt-response {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prompt-response .content {
+    width: 500px;
+    height: auto;
+    margin: 10px auto 0 auto;
+}
+
+.submit-prompt svg {
+    color: #fff;
+}
+
+.further-action {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.further-action button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.further-action button svg {
+    width: 30px;
+    height: auto;
+}
