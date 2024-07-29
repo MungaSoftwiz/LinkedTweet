@@ -1,13 +1,5 @@
 
 
-document.addEventListener('DomContentLoaded', function () {
-
-    const enteredPrompt = document.getElementById('entered-prompt');
-    enteredPrompt.addEventListener('focus', () => {
-        enteredPrompt.style.border = '5px solid black';
-    });
-});
-
 // code to submit the prompt
 async function submitPrompt() {
     const prompt = document.getElementById('entered-prompt').value;

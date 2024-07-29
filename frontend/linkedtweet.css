@@ -25,9 +25,9 @@ body {
 .hero h2 {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    padding: 30px 10px;
+    padding: 60px 0px 80px 0px;
     color: hsl(200, 15%, 54%);
 }
 
@@ -37,19 +37,19 @@ body {
     align-items: center;
 }
 
+.prompt textarea {
+    border-radius: 5px;
+}
+
 .prompt textarea:focus {
     border: 2px solid hsl(200, 70%, 45%);
 }
 
 
 .submit-prompt {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    float: left;
     margin-left: 10px;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background-color: hsl(200, 70%, 45%);
     border: none;
     border-radius: 10px;
@@ -69,6 +69,8 @@ body {
 
 .submit-prompt svg {
     color: #fff;
+    width: 30px;
+    height: 30px;
 }
 
 .further-action {
@@ -91,4 +93,20 @@ body {
 .further-action button svg {
     width: 30px;
     height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .hero h2 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-size: 25px;
+        text-align: center;
+        padding: 60px 0px 80px 0px;
+        color: hsl(200, 15%, 54%);
+    }
+
+    .left-navbar a,
+    .right-navbar a {
+        font-size: 18px;
+    }
 }
