@@ -40,9 +40,8 @@
     </div>
     <div class="prompt-section">
         <div class="prompt">
-            <textarea name="entered-prompt" id="entered-prompt" class="entered-prompt" cols="50"
-                rows="5"> Enter your prompt</textarea>
-            <button id="send-prompt" class="submit-prompt">
+            <textarea name="entered-prompt" id="entered-prompt" class="entered-prompt" cols="50" rows="5"></textarea>
+            <button id="send-prompt" class="submit-prompt" onclick="submitPrompt()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="50" height="50" viewBox="0 0 24 24"
                     stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -53,20 +52,20 @@
 
         </div>
         <div class="prompt-response">
-            <div class="content">
+            <div class="content" id="displayPromptResponse">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus dolore adipisci, eaque culpa minima
                 mollitia, est quos distinctio voluptatum sed sapiente excepturi! Veniam asperiores vero quidem, ipsum
                 maiores corporis quae!
             </div>
             <div class="further-action">
-                <button class="moderate">
+                <button class="moderate" onclick="moderateResponse()">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M6 13.5V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 0 1 0 3m0-3a1.5 1.5 0 0 0 0 3m0 9.75V10.5" />
                     </svg>
                 </button>
-                <button class="analyse">
+                <button class="analyse" onclick="analyseResponse()">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -74,7 +73,7 @@
                     </svg>
 
                 </button>
-                <button class="linkedIn">
+                <button class="linkedIn" onclick="shareOnLinkedIn()">
                     <svg style="enable-background:new 0 0 112.196 112.196" viewBox="0 0 112.196 112.196"
                         xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="56.098" cy="56.097" r="56.098" style="fill:#007ab9" />
@@ -83,7 +82,7 @@
                             style="fill:#f1f2f2" />
                     </svg>
                 </button>
-                <button class="Twitter">
+                <button class="Twitter" onclick="shareOnX()">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1668.56 1221.19"
                         style="enable-background:new 0 0 1668.56 1221.19" xml:space="preserve">
                         <circle cx="834.28" cy="610.6" r="481.33" style="stroke:#fff;stroke-miterlimit:10" />
